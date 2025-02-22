@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Harak's Café - Italian Delights</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            body {
+                text-align: center;
+                background-color: #f5f5dc;
+            }
+
+            header {
+                background: #8b0000;
+                color: white;
+                padding: 20px;
+            }
+
+            #header-img {
+                width: 120px;
+                border-radius: 50%;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: white;
+                margin: 15px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            section {
+                margin-bottom: 30px;
+            }
+
+            article {
+                background: #fff8dc;
+                padding: 15px;
+                margin: 15px auto;
+                width: 60%;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            img {
+                width: 200px;
+                border-radius: 10px;
+            }
+
+            form {
+                max-width: 400px;
+                margin: 0 auto;
+                text-align: left;
+                background: #fff8dc;
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            label,
+            input,
+            textarea {
+                display: block;
+                margin-top: 10px;
+            }
+
+            input[type="submit"] {
+                background: #8b0000;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                border-radius: 5px;
+            }
+
+            footer {
+                background: #333;
+                color: white;
+                padding: 10px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img
+                id="header-img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB0XqC2tEH2iMxPCLCMg_WCDrI_MUa_YV_mQ&s"
+                alt="Harak's Café Logo"
+            />
+            <h1>Harak's Café</h1>
+            <nav>
+                <a href="#menu">Menu</a>
+                <a href="#order-form">Order Now</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="menu">
+                <h2>Menu</h2>
+
+                <article>
+                    <img
+                        src="https://www.themealdb.com/images/media/meals/wtsvxx1511296896.jpg"
+                        alt="Lasagna"
+                    />
+                    <h3>Classic Lasagna</h3>
+                    <p>
+                        Layers of pasta, rich beef sauce, and creamy béchamel
+                        topped with melted cheese. <em>$14.99</em>
+                    </p>
+                </article>
+
+                <article>
+                    <img
+                        src="https://www.themealdb.com/images/media/meals/xxrxux1503070723.jpg"
+                        alt="Mushroom Truffle Risotto"
+                    />
+                    <h3>Mushroom Truffle Risotto</h3>
+                    <p>
+                        Italian Arborio rice slow-cooked with mushrooms and a
+                        hint of truffle oil. <em>$16.99</em>
+                    </p>
+                </article>
+
+                <article>
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdv4yCu4cn-OFVLHjlh6dJlUtwc--LNLHYYA&s"
+                        alt="Classic Tiramisu"
+                    />
+                    <h3>Classic Tiramisu</h3>
+                    <p>
+                        A heavenly Italian dessert made with espresso-soaked
+                        ladyfingers and mascarpone. <em>$9.99</em>
+                    </p>
+                </article>
+            </section>
+
+            <section id="order-form">
+                <h2>Place Your Order</h2>
+                <form>
+                    <label for="lasagna">Classic Lasagna:</label>
+                    <input type="number" id="lasagna" name="lasagna" min="0" />
+
+                    <label for="risotto">Mushroom Truffle Risotto:</label>
+                    <input type="number" id="risotto" name="risotto" min="0" />
+
+                    <label for="tiramisu">Classic Tiramisu:</label>
+                    <input
+                        type="number"
+                        id="tiramisu"
+                        name="tiramisu"
+                        min="0"
+                    />
+
+                    <p>Add-ons:</p>
+                    <input
+                        type="checkbox"
+                        id="extra-cheese"
+                        name="extra-cheese"
+                    />
+                    <label for="extra-cheese">Extra Cheese</label>
+
+                    <input
+                        type="checkbox"
+                        id="garlic-bread"
+                        name="garlic-bread"
+                    />
+                    <label for="garlic-bread">Side of Garlic Bread</label>
+
+                    <label for="special-requests">Special Requests:</label>
+                    <textarea
+                        id="special-requests"
+                        name="special-requests"
+                    ></textarea>
+
+                    <input type="submit" value="Go To Checkout" />
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Made with love by BB</p>
+        </footer>
+    </body>
+</html>
